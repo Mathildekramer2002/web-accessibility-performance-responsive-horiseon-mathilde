@@ -203,11 +203,18 @@ aside.benefits {
     /* Marketing og benefits bliver placeret under hinanden */
     main.content {
         flex-direction: column;
+        margin:0;
     }
 
+    .marketing {
+        width: 100%;
+        min-width: 0;
+        margin:0;
+    }
     /* Benefits fylder hele bredden */
     .benefits {
         width: 100%;
+        margin:0;
     }
 
     /* Gør der mindre luft inde i servicekasserne */

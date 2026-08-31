@@ -1610,6 +1610,9 @@ Test også ved:
 200 % zoom
 ```
 
+### Rettelser
+Margin er sat til 0 på benefits, main-content og marketing i `@media (max-width: 768px)`for at undgå vandret scrolling ved mindre skærme
+
 ---
 
 # Opgave 29 – Afsluttende Lighthouse-test

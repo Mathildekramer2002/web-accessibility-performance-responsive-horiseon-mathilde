@@ -88,6 +88,16 @@ main.content>h1 {
     flex-basis: 100%;
 }
 
+.marketing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.services {
+    flex: 1;
+}
+
 .benefits {
     margin-right: 20px;
     padding: 20px;

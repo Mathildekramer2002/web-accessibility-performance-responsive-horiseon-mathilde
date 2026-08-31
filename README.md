@@ -128,7 +128,7 @@ Inden du ændrer noget i koden, skal du måle sidens nuværende Accessibility-sc
 7. Gem gerne et screenshot.
 
 ```text
-Accessibility før forbedringer: ______
+Accessibility før forbedringer: 67
 ```
 
 > Din præcise Lighthouse-score kan variere lidt afhængigt af Chrome/Lighthouse-version og testmiljø. Det vigtige er, at du registrerer **din egen baseline**, før du ændrer koden, og bruger samme testopsætning ved eftermålingen.
@@ -716,7 +716,7 @@ Brug samme indstillinger ved før- og eftermålingen.
 Notér:
 
 ```text
-Performance før optimering: ______
+Performance før optimering: 75
 ```
 
 > Performance-scoren kan variere lidt mellem målinger. Brug derfor samme browser, samme Lighthouse-indstillinger og så vidt muligt samme testforhold ved før- og eftermålingen.
@@ -767,9 +767,9 @@ Notér gerne resultaterne i en lille tabel.
 
 | Billede                            | Format | Dimensioner | Filstørrelse | Relevant at optimere? |
 | ---------------------------------- | ------ | ----------: | -----------: | --------------------- |
-| `search-engine-optimization.jpg`   |        |             |              |                       |
-| `online-reputation-management.jpg` |        |             |              |                       |
-| `social-media-marketing.jpg`       |        |             |              |                       |
+| `search-engine-optimization.jpg`   | JPG    |7360×4912 px |   14,5 MB    |         ja            |
+| `online-reputation-management.jpg` | JPG    |4404x2877 px |   6,4 MB     |         ja            |
+| `social-media-marketing.jpg`       | JPG    |5000x3451 px |   13,8 MB    |         ja           |
 
 ---
 

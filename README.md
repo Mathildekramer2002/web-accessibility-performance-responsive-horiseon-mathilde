@@ -866,8 +866,8 @@ Kør Lighthouse med samme indstillinger som ved baseline.
 Notér:
 
 ```text
-Performance før: ______
-Performance efter: _____
+Performance før: 75
+Performance efter: 94
 ```
 
 ### Mål
@@ -941,7 +941,11 @@ Undersøg:
 
 Dokumentér mindst tre problemer.
 
----
+### Problemer ved 320 px
+
+- Navigationen bliver for smal, så linksene bryder over flere linjer og ligger oven på hero-billedet.
+- Hero-billedet skalerer dårligt og bliver meget højt og beskåret på den smalle skærm.
+- Serviceområdet tilpasser sig ikke skærmbredden, så billedet og indholdet bliver for bredt og går ud over siden.
 
 ## Find det gamle layoutsystem
 

@@ -92,6 +92,7 @@ main.content>h1 {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    flex: 1;
 }
 
 .services {
@@ -107,6 +108,13 @@ main.content>h1 {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #1a5777;
+}
+
+aside.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
 }
 
 .benefits>h2 {

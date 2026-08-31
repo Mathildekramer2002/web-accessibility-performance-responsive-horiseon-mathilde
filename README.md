@@ -1367,10 +1367,19 @@ Brug Flexbox, når det løser et konkret layoutproblem.
 
 Du skal kunne forklare:
 
-- hvorfor `main.content` bruger Flexbox
-- hvorfor `.marketing` bruger `column`
-- hvorfor `.services` bruger `flex: 1`
-- hvorfor `aside.benefits` bruger `column`
+## hvorfor `main.content` bruger Flexbox
+
+- `main.content`bruger flexbox, fordi den indeholder både `.marketing` og `.benefits`, og de skal kunne stå ved siden af hinanden. Flexbox gør det nemmere at styre, hvordan de bliver placeret i forhold til hinanden. Overskriften skal stadig stå øverst og fylde hele rækken, og derefter kan marketing og benefits stå ved siden af hinanden.
+
+## hvorfor `.marketing` bruger `column`
+
+- Inde i `.marketing` ligger de tre forskellige servicebokse. De skal ikke stå ved siden af hinanden, men under hinanden. Derfor bruges der column, så elementerne bliver placeret nedad i stedet for hen ad siden.
+
+## hvorfor `.services` bruger `flex: 1`
+- De tre servicebokse har alle classen `.services`. Når jeg giver dem flex: 1, får de mulighed for at dele den plads, der er inde i `.marketing.` På den måde behøver jeg ikke selv at give hver enkelt boks en bestemt størrelse, og de tilpasser sig i stedet efter den plads, der er.
+
+## hvorfor `aside.benefits` bruger `column`
+- Benefits indeholder flere forskellige ting, som fx Lead Generation, Brand Awareness og Cost Management. De skal stå under hinanden ned gennem boksen. Derfor bruges flex-direction: column, så indholdet bliver placeret lodret i stedet for ved siden af hinanden.
 
 ---
 

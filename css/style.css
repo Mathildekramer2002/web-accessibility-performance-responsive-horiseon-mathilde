@@ -186,3 +186,49 @@ aside.benefits {
 .footer h2 {
     font-size: 20px;
 }
+
+/* Styling til skærme på 768px eller mindre */
+@media (max-width: 768px) {
+
+    /* Headeren bliver sat under hinanden */
+    .header {
+        flex-direction: column;
+    }
+
+    /* Fjerner margin i højre side af navigationen */
+    .header nav {
+        margin-right: 0;
+    }
+
+    /* Marketing og benefits bliver placeret under hinanden */
+    main.content {
+        flex-direction: column;
+    }
+
+    /* Benefits fylder hele bredden */
+    .benefits {
+        width: 100%;
+    }
+
+    /* Gør der mindre luft inde i servicekasserne */
+    .search-engine-optimization,
+    .online-reputation-management,
+    .social-media-marketing {
+        padding: 25px;
+    }
+
+    /* Fjerner float fra billederne, så de ikke ligger ved siden af teksten */
+    .float-left,
+    .float-right {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    /* Gør billederne responsive, så de tilpasser sig skærmens størrelse */
+    .search-engine-optimization img,
+    .online-reputation-management img,
+    .social-media-marketing img {
+        max-width: 100%;
+        height: auto;
+    }
+}

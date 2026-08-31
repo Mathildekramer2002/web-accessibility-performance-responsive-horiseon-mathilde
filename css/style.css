@@ -74,10 +74,18 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
+
+main.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1.2rem;
     margin-left: 20px;
+}
+
+main.content>h1 {
+    flex-basis: 100%;
 }
 
 .benefits {

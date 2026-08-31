@@ -1644,19 +1644,42 @@ Responsive webdesign vurderes manuelt med Device Toolbar og zoom-test.
 Besvar kort:
 
 1. Hvad var Accessibility-score før og efter?
-2. Hvilke accessibility-problemer fandt Lighthouse?
-3. Hvilke accessibility-problemer krævede manuel kontrol?
-4. Hvilke semantiske HTML-ændringer foretog du?
-5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
-6. Hvad var Performance-score før og efter?
-7. Hvilke billeder optimerede du?
-8. Hvor meget blev filstørrelserne reduceret?
-9. Hvilke elementer gjorde du til flex-containere?
-10. Hvilke gamle floats kunne fjernes?
-11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
-12. Hvordan ændrer layoutet sig på en mobil skærm?
-13. Hvad sker der ved 200 % zoom?
+- Den var 67 før og 100 efter
 
+2. Hvilke accessibility-problemer fandt Lighthouse?
+-  Problemerne med kontrasten mellem den hvide tekst og de blå bokse som var for lyse
+
+3. Hvilke accessibility-problemer krævede manuel kontrol?
+- Det krævede manuel kontrol at teste, om man kunne navigere rundt på siden med tastaturet, og om det var tydeligt, hvilket link der var i fokus. Jeg skulle også selv vurdere, om alt-teksterne gav mening i forhold til billederne, og om siden stadig var læsbar og brugbar på forskellige skærmstørrelser og ved zoom.
+
+4. Hvilke semantiske HTML-ændringer foretog du?
+- jeg ændrede nogle div-elementer til header, nav, main samt aside og section
+
+5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
+- Efter jeg ændrede HTML-strukturen og begyndte at bruge Flexbox, blev nogle af de gamle CSS-regler overflødige. Det gælder blandt andet float og clear fordi Flexbox nu styrer, hvordan elementerne bliver placeret i forhold til hinanden. Det gjorde også layoutet nemmere at styre, især når siden skal tilpasse sig forskellige skærmstørrelser.
+
+6. Hvad var Performance-score før og efter?
+- Den var 75 før og 94 efter
+
+7. Hvilke billeder optimerede du?
+- Jeg optimerede alle billederne, bare ikke dem i benefits sektionen.
+
+8. Hvor meget blev filstørrelserne reduceret?
+- Alle filerne blev reduceret til 1200 x 800 px
+
+9. Hvilke elementer gjorde du til flex-containere?
+- Jeg gjorde .header, main.content, .marketing og aside.benefits til flex-containere. Headeren bruger Flexbox til at placere logo og navigation, main.content til at styre placeringen af marketing og benefits, .marketing til at placere serviceboksene under hinanden, og aside.benefits til at placere indholdet i Benefits under hinanden.
+
+10. Hvilke gamle floats kunne fjernes?
+
+11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
+- Jeg valgte et breakpoint på 768px, fordi det var omkring denne størrelse, at layoutet begyndte at få problemer med pladsen. På mindre skærme giver det derfor bedre mening, at elementerne står under hinanden i stedet for ved siden af hinanden.
+
+12. Hvordan ændrer layoutet sig på en mobil skærm?
+- På en mobil skærm bliver layoutet mere lodret, så indholdet passer bedre til den mindre skærm. Headeren ændrer retning, så logo og navigation står under hinanden. Marketing og Benefits bliver også placeret under hinanden i stedet for ved siden af hinanden. Billederne i serviceboksene får fjernet deres float, så de ikke længere ligger ved siden af teksten, og både billeder og bokse tilpasser sig den mindre skærmbredde.
+
+13. Hvad sker der ved 200 % zoom?
+- Ved 200 % zoom bliver tekst, billeder og andre elementer større, og der bliver derfor mindre plads på skærmen. Navigationen begynder at gå over flere linjer, og Benefits bliver smallere, så teksten fylder flere linjer. Indholdet er stadig læsbart og brugbart, men layoutet bliver mere presset, fordi der er mindre plads til elementerne.
 ---
 
 # Kontrol af din løsning

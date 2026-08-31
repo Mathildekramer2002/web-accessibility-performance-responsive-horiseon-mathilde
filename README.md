@@ -959,12 +959,28 @@ display: inline-block;
 
 Undersøg, hvilke elementer disse regler forsøger at placere.
 
+### Det gamle layoutsystem
+
+Starter-CSS'en bruger `float` og `inline-block` til at placere elementerne på siden.
+
+- Navigationen bruger `float: right`, så navigationen placeres til højre for overskriften/logoet i headeren.
+- Navigationens listepunkter bruger `display: inline-block`, så linksene står ved siden af hinanden.
+- `.content` bruger `display: inline-block` og har en bredde på 75 %.
+- `.benefits` bruger `float: right` og har en bredde på 20 %, så Benefits placeres ved siden af hovedindholdet.
+- `.float-left` og `.float-right` bruges på billederne i serviceområderne, så billeder og tekst kan stå ved siden af hinanden.
+
+
 ### Refleksion
 
 ```text
 Hvilke elementer skal stå ved siden af hinanden?
 Hvilke elementer skal stå under hinanden?
 ```
+**Ved siden af hinanden:**  
+Navigationens links, headerens indhold, Content og Benefits samt billeder og tekst i serviceområderne.
+
+**Under hinanden:**  
+De forskellige serviceområder og indholdet inde i Benefits-sektionen.
 
 Før du skriver Flexbox, skal du forstå den ønskede struktur.
 
